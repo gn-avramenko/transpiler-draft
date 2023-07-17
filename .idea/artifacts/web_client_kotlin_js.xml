@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="web-client-kotlin-js">
+    <output-path>$PROJECT_DIR$/demo/web-client-kotlin/build/libs</output-path>
+    <root id="archive" name="web-client-kotlin-js.jar">
+      <element id="module-output" name="transpiler-draft.demo.web-client-kotlin.jsMain" />
+    </root>
+  </artifact>
+</component>
