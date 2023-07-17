@@ -3,7 +3,7 @@
  * Project: Lunda.ru Deployment Scripts
  *****************************************************************/
 
-package com.gridnine.platform.elsa.demo
+package com.gridnine.platform.elsa.demo.web
 
 import com.gridnine.platform.elsa.web.ui.ColumnDataType
 import com.gridnine.platform.elsa.web.ui.EntityList

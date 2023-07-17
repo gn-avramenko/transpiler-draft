@@ -5,7 +5,6 @@
 
 package com.gridnine.platform.elsa.demo.web
 
-import com.gridnine.platform.elsa.demo.UserList
 import com.gridnine.platform.elsa.web.ui.Div
 import com.gridnine.platform.elsa.web.ui.MainFrame
 import com.gridnine.platform.elsa.web.ui.MainFrameConfigurator

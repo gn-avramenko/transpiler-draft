@@ -18,11 +18,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.dsl.KotlinJsCompile> {
     kotlinOptions.useEsClasses = true
 }
 
-kotlin.sourceSets{
-    getByName("jsMain"){
-        this.kotlin.srcDir("src/jsMain/kotlin-gen")
-    }
-}
 dependencies {
     commonMainImplementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
     commonMainImplementation(project(":platform:web-kotlin"))
