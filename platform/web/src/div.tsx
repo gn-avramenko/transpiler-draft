@@ -11,11 +11,9 @@ interface DivInternal {
 
 function DivComp(props: {component: DivInternal}) {
   const { component } = props;
-  const params = useParams();
-  console.log(params);
   return (
     <>
-      <Link to="/test?id=23">Navigate</Link>
+      <Link to="/login">Navigate</Link>
       <div>{component.getText()}</div>
     </>
   );

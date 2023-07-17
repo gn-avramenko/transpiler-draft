@@ -12,6 +12,6 @@ val mainFrame = DemoMainFrame();
 class DemoRouter : Router() {
     override fun configure(rb: RoutesBuilder) {
         rb.route("/", mainFrame)
-        rb.route("/login", Div1())
+        rb.route("/login", DemoLogin())
     }
 }

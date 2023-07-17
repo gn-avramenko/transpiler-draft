@@ -7,6 +7,8 @@ import { EntityList, EntityListBuilder } from './src/entity-list';
 import { UiBuilder } from './src/ui-builder';
 import { BaseEntityEditor } from './src/base-entity-editor';
 import { SimpleFormBuilder } from './src/simple-form-builder';
+import {Login, LoginFormConfigurator} from "./src/login";
+// import { Login, LoginFormConfigurator } from './src/login';
 // import { BaseEntityEditor } from './src/base-entity-editor';
 // import { UiBuilder } from './src/ui-builder';
 
@@ -31,6 +33,10 @@ import { SimpleFormBuilder } from './src/simple-form-builder';
 (window as any).BaseEntityEditor = BaseEntityEditor;
 
 (window as any).SimpleFormBuilder = SimpleFormBuilder;
+
+(window as any).LoginFormConfigurator = LoginFormConfigurator;
+
+(window as any).Login = Login;
 
 // class Div3 extends Div {
 //   getText(): string {
@@ -105,3 +111,22 @@ import { SimpleFormBuilder } from './src/simple-form-builder';
 //   ]);
 //   mainFrame.setLoading(false);
 // }, 1000);
+
+// class MyLogin extends Login {
+//   configure(rb: LoginFormConfigurator) {
+//     rb.setLoginMethod((login, password, rememberMe) => {
+//       console.log(login, password, rememberMe);
+//     });
+//     rb.setTitle('LDocs');
+//     rb.setSubTitle('admin');
+//   }
+// }
+// class CustomRouter extends Router {
+//   configure(rb: RoutesBuilder) {
+//     rb.route('/login', new MyLogin());
+//   }
+// }
+// const router = new CustomRouter();
+// if (true) {
+//   webFacade.renderWindow(router);
+// }

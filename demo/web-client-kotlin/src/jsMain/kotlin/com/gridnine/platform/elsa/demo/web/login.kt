@@ -5,10 +5,18 @@
 
 package com.gridnine.platform.elsa.demo.web
 
-import com.gridnine.platform.elsa.web.ui.Div
+import com.gridnine.platform.elsa.web.coroutines.launch
+import com.gridnine.platform.elsa.web.ui.Login
+import com.gridnine.platform.elsa.web.ui.LoginFormConfigurator
 
-class Login : Div(){
-    override fun getText(): String {
-        return "Login"
+class DemoLogin : Login(){
+    override fun configure(rb: LoginFormConfigurator) {
+        rb.setTitle("Sete")
+        rb.setSubTitle("admin")
+        rb.setLoginMethod{login, password, rememberMe ->
+            launch {
+                println("login: ${login} password: ${password} rememberMe: ${rememberMe}")
+            }
+        }
     }
 }
