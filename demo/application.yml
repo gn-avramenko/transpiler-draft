@@ -6,4 +6,4 @@ spring:
       static-locations: static
 logging:
   level:
-    root: DEBUG
+    root: INFO
